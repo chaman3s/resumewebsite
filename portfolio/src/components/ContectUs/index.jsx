@@ -1,15 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faAddressCard,
-//   faMapMarkerAlt,
-//   faMobile,
-// } from "@fortawesome/free-solid-svg-icons";
-// import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-// import {
-//   faLinkedinIn,
- 
-// } from "@fortawesome/free-brands-svg-icons";
-
 export default function ContactUs({icons}) {
   return (
     <section id="contact">
@@ -65,7 +54,7 @@ export default function ContactUs({icons}) {
 
           <h2>My Address</h2>
           <div>
-            <FontAwesomeIcon icon={icons[1]} /> ABC
+            <FontAwesomeIcon icon={icons[1]} /> Delhi,India
           </div>
           <div>
             <FontAwesomeIcon icon={icons[2]} /> 9354861574
@@ -74,17 +63,6 @@ export default function ContactUs({icons}) {
             <FontAwesomeIcon icon={icons[3]} /> chamanggarwal@gmail.com
           </div>
         </div>
-      </div>
-
-      {/* Social Links */}
-      <div className="bottom-list">
-        <ul className="horizontal-list text-center social-links" style={{ margin: 0 }}>
-          <li>
-            <a href="#">
-              <FontAwesomeIcon icon={icons[4]} />
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
   );

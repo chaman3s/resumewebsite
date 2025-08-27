@@ -4,7 +4,7 @@ export default function ListContainer({expList,title,icon,titleIcon , styles}) {
          <section id={title.toLowerCase()}>
                 <h1 class="section-heading mb75px">
                     <span>
-                        <i class={titleIcon}></i>
+                         <FontAwesomeIcon icon={titleIcon} />
                     </span>
                     <span>{title} </span>
                 </h1>

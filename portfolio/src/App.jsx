@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './components/Header'
-import dp from "./assets/Images/2.jpg"
+import dp from "./assets/Images/myImage.jpg"
 import About from './components/About'
 import Skill from "./components/Skill"
 import ListContainer from './components/ListContainer'
@@ -8,7 +8,7 @@ import ctech from "./assets/Images/logo.png"
 import intern from "./assets/Images/intern.webp"
 import gtbitLogo from "./assets/Images/gtbit.jpg"
 import pusaLogo from "./assets/Images/pusa.png"
-import { faPlane,faCarSide,faBriefcase, faAddressCard,faMapMarkerAlt,faMobile,faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import { faPlane,faCarSide,faBriefcase, faAddressCard,faMapMarkerAlt,faMobile,faEnvelope,faThList,faGraduationCap} from "@fortawesome/free-solid-svg-icons";
 import Project from './components/Project'
 import p1 from "./assets/Images/project1.png"
 import p2 from "./assets/Images/project2.png"
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <Header menuList={[{item:"Home",id:""},{item:"About",id:"about"},{item:"Skills",id:"skills"},{item:"Experience",id:"experience"},{item:"Education",id:"education"},{item:"Portfolio",id:"portfolio"},{item:"Contact",id:"contact"}]}/>
+      <Header menuList={[{item:"Home",id:""},{item:"About",id:"about"},{item:"Skills",id:"skills"},{item:"Experience",id:"experience"},{item:"Education",id:"education"},{item:"Project",id:"portfolio"},{item:"Contact",id:"contact"}]}/>
       <main>
         <About myImage={dp} summary={"  Software developer having a total of 2 years of experience in building interactive, user-centric web applications and dashboards using tech stack like React javascript html css and redux and node."}/>
         <Skill data={["JavaScript", "React", "Node.js", "MongoDB", "HTML", "CSS", "SQL","Tailwind CSS","Git"]}/>
@@ -65,13 +65,13 @@ function App() {
         }]}
         title={"Education"}
         icon={faCarSide}
-        titleIcon={faBriefcase}
+        titleIcon={faGraduationCap}
         styles={[{img:{top:"-3px",position:"absolute"},head:{textAlign: "end",position: "absolute",left: "-117px"}},
           {img:{position:"absolute",left: "145px"},head:{left:"96px"}}]}
         />
         <Project projectList={[{img:p1,detail:`PayWeb
-is secure platform for transaction history `},{img:p2,detail:`PdfReader is 
-A feature-rich document reader`}]}/>
+is secure platform for transaction history `,url:"https://paytmweb-client.vercel.app/"},{img:p2,detail:`PdfReader is 
+A feature-rich document reader`, url:"https://book-reader-client.vercel.app/"}]} titleIcon={faThList} />
 <ContactUs icons={[faAddressCard,faMapMarkerAlt,faMobile,faEnvelope,faEnvelope]}/>
 
       </main>
